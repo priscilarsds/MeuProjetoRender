@@ -1,9 +1,7 @@
-from flask import Flask
-app = Flask(__name__)
+import streamlit as st
 
-@app.route("/")
-def hello():
-    return "Olá! Meu projeto está rodando no Render com sucesso!"
+st.title("Meu Projeto Render")
+st.write("Olá! O app está funcionando com Streamlit com sucesso!")
 
-if __name__ == "__main__":
-    app.run()
+# Você pode adicionar mais elementos se quiser, por exemplo:
+st.success("Tudo configurado e rodando na nuvem!")
