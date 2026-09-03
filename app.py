@@ -1,9 +1,7 @@
-from flask import Flask
-app = Flask(__name__)
+"""Módulo principal do aplicativo Streamlit para o projeto Render."""
 
-@app.route("/")
-def hello():
-    return "Olá! Meu projeto está rodando no Render com sucesso!"
+import streamlit as st
 
-if __name__ == "__main__":
-    app.run()
+st.title("Meu Projeto Render")
+st.write("Olá! O app está funcionando com Streamlit com sucesso!")
+st.success("Tudo configurado e rodando na nuvem!")
